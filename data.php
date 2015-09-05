@@ -89,6 +89,7 @@ function getBrowser() {
 
     $browser_array  =   array(
         '/msie/i'       =>  'Internet Explorer',
+        '/trident/i'    =>  'Internet Explorer',
         '/firefox/i'    =>  'Firefox',
         '/safari/i'     =>  'Safari',
         '/chrome/i'     =>  'Chrome',
@@ -118,6 +119,10 @@ function getBrowser() {
                 case 'Internet Explorer':
                     echo  "<p><strong>". $browserTitle ." </strong></p><p class='oswald'><img  src='img/ie.png'> ".$browser."</p>";
                     break;
+                case 'Handheld Browser':
+                    echo  "<p><strong>". $browserTitle ." </strong></p><p class='oswald'><img  src='img/handheld.png'> ".$browser."</p>";
+                    break;
+
                 default:
                     echo "";
             }
