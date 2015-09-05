@@ -20,6 +20,9 @@
     <!-- get google map-->
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 
+    <!-- get adsense nonsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <!-- google analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -106,7 +109,10 @@
     <div class="col-md-12 col-xs-12 text-center ip text-uppercase shadow-font">
     <section>
     <div class="row ip big ">
-        <?php 
+        <?php
+
+        if(($continent == "Norway")?$continent = "Norge" : $continent);// Switching Norway to Norge
+
         $ip =   $_SERVER['REMOTE_ADDR']?:($_SERVER['HTTP_X_FORWARDED_FOR']?:$_SERVER['HTTP_CLIENT_IP']);
             echo "<p class='small'><strong>".$yourIp."</strong></p><p class='oswald' >" .$ip. "</p>";
             echo "<p class='smaller'>";
@@ -166,6 +172,19 @@
             ?>
 
         </div><!-- end ISP -->
+
+        <!-- start adsense-->
+        <div class="row">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-0951956569611644"
+                 data-ad-slot="5395999526"
+                 data-ad-format="auto">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
     </div><!-- end left container -->
 
