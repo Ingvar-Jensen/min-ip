@@ -188,7 +188,7 @@
 
     </div><!-- end left container -->
 
-    <!-- start right container -->
+    <!-- start right column -->
     <div class="col-md-6 col-xs-12 text-center ip text-uppercase shadow-font">
     <div class="spacer"></div>
         
