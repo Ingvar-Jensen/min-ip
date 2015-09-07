@@ -1,2 +1,5 @@
 # min-ip
-This script shows the visitor the IP adresse and other information like user agent and location.
+This php script shows the visitor the they're IP address, device information and location.
+
+
+![ScreenShot](http://www.unofix.no/images/portfolio/min-ip.png)
